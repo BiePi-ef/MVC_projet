@@ -18,6 +18,8 @@ switch($page)
     
     case 'produits':
         include_once "controller/produitsController.php";
+        $produits = new ProduitsController;
+        $produits->getProduits();
         break;
 
     case 'commander':

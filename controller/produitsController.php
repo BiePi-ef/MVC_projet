@@ -17,23 +17,24 @@ class ProduitsController
         include_once 'view/accueil.php';
     }
 
-    // public function getProduits()
-    // {
-    //     $produits = $this->model->getArticles();
-    //     include_once 'view/articles.php';
-    // }
+    public function getProduits()
+    {
+        $produits = $this->model->getProduits();
+        include_once 'view/produits.php';
 
-    // public function getProduitsByCategorie()
-    // {
-    //     $produits = $this->model->getArticlesByCategorie($_GET['id']);
-    //     include_once 'view/articles.php';
-    // }
+    }
 
-    // public function getProduitById()
-    // {
-    //     $produit = $this->model->getArticleById($_GET['id']);
-    //     include_once 'view/article.php';
-    // }
+    public function getProduitsByCategorie()
+    {
+        $produits = $this->model->getProduitsByCategorie($_GET['id']);
+        include_once 'view/produits.php';
+    }
+
+    public function getProduitById()
+    {
+        $produit = $this->model->getProduitById($_GET['id']);
+        include_once 'view/produit.php';
+    }
 
 }
 
