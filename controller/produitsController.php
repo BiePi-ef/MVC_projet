@@ -2,36 +2,38 @@
 include_once 'model/produitsModel.php';
 
 
-
-class ArticlesController
+class ProduitsController
 {
     private $model;
 
     public function __construct()
     {
-        $this->model = new PorduitsModel;
+        $this->model = new ProduitsModel;
     }
 
-
-
-
-    public function getProduits()
+    public function getLastArticle()
     {
-        $produits = $this->model->getArticles();
-        include_once 'view/articles.php';
+        $article = $this->model->getLastArticle();
+        include_once 'view/accueil.php';
     }
 
-    public function getProduitsByCategorie()
-    {
-        $produits = $this->model->getArticlesByCategorie($_GET['id']);
-        include_once 'view/articles.php';
-    }
+    // public function getProduits()
+    // {
+    //     $produits = $this->model->getArticles();
+    //     include_once 'view/articles.php';
+    // }
 
-    public function getProduitById()
-    {
-        $produit = $this->model->getArticleById($_GET['id']);
-        include_once 'view/article.php';
-    }
+    // public function getProduitsByCategorie()
+    // {
+    //     $produits = $this->model->getArticlesByCategorie($_GET['id']);
+    //     include_once 'view/articles.php';
+    // }
+
+    // public function getProduitById()
+    // {
+    //     $produit = $this->model->getArticleById($_GET['id']);
+    //     include_once 'view/article.php';
+    // }
 
 }
 

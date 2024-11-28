@@ -16,10 +16,10 @@ class Bdd{
         }
     }
 }
-?>
 
 
-//test bdd
+
+// test bdd
 // $bdd = new Bdd; 
 // $bdd->connexion();
 // $bdd new Bdd::connexion();

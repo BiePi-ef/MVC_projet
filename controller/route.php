@@ -11,7 +11,9 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'accueil';
 switch($page)
 {
     case 'accueil':
-        include_once "controller/accueilController.php";
+        include_once "controller/produitsController.php";
+        $produit = new ProduitsController;
+        $produit->getLastArticle();
         break;
     
     case 'produits':

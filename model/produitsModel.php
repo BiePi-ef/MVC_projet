@@ -1,8 +1,7 @@
 <?php
 include_once 'bdd.php';
 
-
-class ArticlesModel
+class ProduitsModel
 {
     private $bdd;
 
@@ -11,6 +10,9 @@ class ArticlesModel
        $this->bdd = Bdd::connexion();
     }
 
+    public function getLastArticle() {
+        return $this->bdd->query("SELECT nom, description, image, prix FROM velos WHERE date_ajout = (SELECT max(date_ajout) FROM velos);")->fetch(PDO::FETCH_ASSOC);
+    }
     // public function getArticles()
     // {
     //     return $this->bdd->query("SELECT * FROM articles")->fetchAll(PDO::FETCH_ASSOC);
