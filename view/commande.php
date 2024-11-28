@@ -1,9 +1,9 @@
 <h1>Commande</h1>
 <form action="" method="post">
-Produit : <input  list="veloDropdown">
+Produit :
     <select name="veloDropdown" id="veloDropdown">
         <option value="<?= $produits['nom'] ?>">
-    </datalist>
+    </select> </br>
 Nom : <input type="text" name="nom"required> <br>
 Prenom : <input type="text" name="prenom"required> <br>
 Email : <input type="email" name="email" required > <br>
