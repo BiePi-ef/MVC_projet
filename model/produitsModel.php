@@ -10,8 +10,13 @@ class ProduitsModel
        $this->bdd = Bdd::connexion();
     }
 
-    public function getLastArticle() {
-        return $this->bdd->query("SELECT nom, description, image, prix FROM velos WHERE date_ajout = (SELECT max(date_ajout) FROM velos);")->fetch(PDO::FETCH_ASSOC);
+    public function getLastProduct() {
+        return $this->bdd->query("SELECT nom, description, image, prix, id_velo FROM velos WHERE date_ajout = (SELECT max(date_ajout) FROM velos);")->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function getProductById($id)
+    {
+        return $this->bdd->query("SELECT * FROM velos")->fetch(PDO::FETCH_ASSOC);
     }
     // public function getArticles()
     // {

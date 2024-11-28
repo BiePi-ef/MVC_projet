@@ -11,10 +11,16 @@ class ProduitsController
         $this->model = new ProduitsModel;
     }
 
-    public function getLastArticle()
+    public function getLastProduct()
     {
-        $article = $this->model->getLastArticle();
+        $product = $this->model->getLastProduct();
         include_once 'view/accueil.php';
+    }
+
+    public function getProductById($id)
+    {
+        $product = $this->model->getProductById($id);
+        include_once 'view/commande.php';
     }
 
     // public function getProduits()

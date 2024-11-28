@@ -4,11 +4,13 @@ include_once 'model/commandeModel.php';
 
 class commandeController
 {
-    private $model;
+    private $produitModel;
+    private $commandeModel;
 
     public function __construct()
     {
-        $this->model = new UsersModel;
+        $this->produitModel = new ProduitsModel;
+        $this->commandeModel = new commandeController;
     }
 
     public function getFromCommande()
@@ -19,14 +21,16 @@ class commandeController
     public function commande()
     {
         if(isset($_POST['email']))
-        {
+        {   
+            $id_velo = $_POST['id_velo'];
             $nom = $_POST['nom'];
             $prenom = $_POST['prenom'];
             $email = $_POST['email'];
-            $message = $_POST['message']
+            $tel = $_POST['message'];
+            $message = $_POST['message'];
 
 
-            if($this->model->commande($nom,$prenom,$email, $message))
+            if($this->commandeModel->commande($id_velo,$nom,$prenom,$email,$tel,$message))
             {
                 echo "commande ok";
             }

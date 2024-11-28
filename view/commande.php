@@ -1,8 +1,9 @@
 <h1>Commande</h1>
 <form action="" method="post">
-produit : <input list="velos">
-  <datalist id="velos">
-  </datalist>
+Produit : <input  list="veloDropdown">
+    <select name="veloDropdown" id="veloDropdown">
+        <option value="<?= $produits['nom'] ?>">
+    </datalist>
 Nom : <input type="text" name="nom"required> <br>
 Prenom : <input type="text" name="prenom"required> <br>
 Email : <input type="email" name="email" required > <br>

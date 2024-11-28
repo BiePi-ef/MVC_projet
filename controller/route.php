@@ -13,7 +13,7 @@ switch($page)
     case 'accueil':
         include_once "controller/produitsController.php";
         $produit = new ProduitsController;
-        $produit->getLastArticle();
+        $produit->getLastProduct();
         break;
     
     case 'produits':
@@ -21,7 +21,10 @@ switch($page)
         break;
 
     case 'commander':
+        include_once "controller/produitsController.php";
         include_once "controller/commanderController.php";
+        $produit = new ProduitsController;
+        $produit->getProductById($_GET['velo']);
         break;
 
     case 'contact':
