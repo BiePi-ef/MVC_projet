@@ -54,7 +54,7 @@ CREATE TABLE contacts (
 
 
 INSERT INTO velos (nom, description, image, prix) VALUES
-('Bike5', 'Le dernier vélo électrique ultra performant.', 'bike5.jpg', 1999.99),
-('BikeOne', 'Un vélo pratique pour tous les terrains.', 'bikeone.jpg', 1499.99),
-('Bike22', 'Un vélo robuste pour les amateurs de sport.', 'bike22.jpg', 1299.99),
-('BikeFirst', 'Le modèle classique avec des fonctionnalités modernes.', 'bikefirst.jpg', 999.99);
+('Bike5', 'Le dernier vélo électrique ultra performant.', 'bike5.jpg', "2024-11-27"),
+('BikeOne', 'Un vélo pratique pour tous les terrains.', 'bikeone.jpg', "2024-11-27"),
+('Bike22', 'Un vélo robuste pour les amateurs de sport.', 'bike22.jpg', "2024-11-27"),
+('BikeFirst', 'Le modèle classique avec des fonctionnalités modernes.', 'bikefirst.jpg', "2024-11-28");
