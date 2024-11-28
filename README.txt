@@ -8,7 +8,7 @@
 // bdd
 
 
-
+CREER LA BDD AVEC LE NOM smartbike ET LE PORT 3306
 
 CREATE TABLE velos (
   id_velo INT AUTO_INCREMENT,
