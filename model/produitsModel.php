@@ -18,6 +18,12 @@ class ProduitsModel
     {
         return $this->bdd->query("SELECT * FROM velos")->fetch(PDO::FETCH_ASSOC);
     }
+    
+    public function getProduits()
+    {
+        return $this->bdd->query("SELECT * FROM velos")->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     // public function getArticles()
     // {
     //     return $this->bdd->query("SELECT * FROM articles")->fetchAll(PDO::FETCH_ASSOC);

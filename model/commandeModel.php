@@ -13,7 +13,7 @@ class CommandeModel
     public function commande($id_velo,$nom,$prenom,$tel,$email,$message)
     {
         $user = $this->bdd->prepare("INSERT INTO commandes(id_velo,nom,prenom,tel,email,message) VALUE(?,?,?,?,?)");
-        return $user->execute([$nom,$prenom,$tel,$email,$message]);
+        return $user->execute([$id_velo,$nom,$prenom,$tel,$email,$message]);
     }
 
 
