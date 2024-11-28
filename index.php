@@ -5,3 +5,5 @@
     include('./controller/route.php');
 
     include("./view/footer.php");
+
+?>

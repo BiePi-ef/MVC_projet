@@ -16,7 +16,7 @@ CREATE TABLE velos (
   description TEXT NOT NULL,
   image VARCHAR(255) NOT NULL,
   prix DECIMAL(10,2) NOT NULL,
-  date_ajout DATE N,
+  date_ajout DATE ,
   PRIMARY KEY (id_velo)
 ) ENGINE=INNODB;
 
