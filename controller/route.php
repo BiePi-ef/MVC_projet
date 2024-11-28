@@ -11,22 +11,19 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'accueil';
 switch($page)
 {
     case 'accueil':
-        // exemple :
-        // include_once 'controller/articlesController.php';
-        // $articles = new ArticlesController;
-        // $articles->getArticles();
-        // break;
-
-    case 'categorie':
+        include_once "controller/accueilController.php";
         break;
     
     case 'produits':
+        include_once "controller/produitsController.php";
         break;
 
     case 'commander':
+        include_once "controller/commanderController.php";
         break;
 
     case 'contact':
+        include_once "view/contact.php";
         break;
 
     default :

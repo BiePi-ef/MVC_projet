@@ -4,4 +4,4 @@
 
     include('./controller/route.php');
 
-    include("./view/footer");
+    include("./view/footer.php");
