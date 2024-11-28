@@ -22,20 +22,16 @@
       <ul class="navbar-nav me-auto">
         
         <li class="nav-item">
-          <a class="nav-link" href="#">Accueil</a>
+          <a class="nav-link" href="?page=accueil">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Vélos</a>
+          <a class="nav-link" href="?page=produits">Vélos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacts</a>
+          <a class="nav-link" href="?page=contact">Contact</a>
         </li>
         
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
